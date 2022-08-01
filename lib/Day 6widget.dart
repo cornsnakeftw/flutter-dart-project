@@ -180,7 +180,7 @@ centerTitle: true,
   
   body:Column (
     children: <Widget>[
-    const Text( 'You have pushed',
+    const Text( 'You have pushed', style:TextStyle(fontSize: 30)
     ),
     const Text(
       'the buton this many times:',
