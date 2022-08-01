@@ -396,3 +396,82 @@ currentIndex = index;
 //           ),
 //         ],
 //       ),
+
+
+//----------THEME---------------\\
+// import 'package:flutter/material.dart';
+
+// void main() => runApp(App());
+
+// class App extends StatelessWidget {
+//   const App({Key? key}) : super(key: key);
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Flutter Demo',
+//       theme: ThemeData.dark(),  //dark theme. for light try chg to ThemeData.light()
+//       home: HomePage(),
+//     );
+//   }
+// }
+
+// class HomePage extends StatefulWidget {
+//   const HomePage({Key? key}) : super(key: key);
+
+//   @override
+//   State<HomePage> createState() => _HomePageState();
+// }
+
+// class _HomePageState extends State<HomePage> {
+//   int count = 0;
+//   int currentIndex = 0;
+
+//   @override
+//   Widget build(BuildContext context) {
+//     final List<String> entries = <String>[
+//       'First Item',
+//       'Second Item',
+//       'Third Item',
+//       'Fourth Item'
+//     ];
+
+//     final List<Color> colorCodes = <Color>[
+//       Colors.blue,
+//       Colors.red,
+//       Colors.yellow,
+//       Colors.green
+//     ];
+
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text('Appbar'),
+//         centerTitle: true,
+//       ),
+
+//       body: GridView.count(
+//         primary: false,
+//         padding: const EdgeInsets.all(16),
+//         crossAxisSpacing: 10,
+//         mainAxisSpacing: 20,
+//         crossAxisCount: 3,
+//         scrollDirection: Axis.vertical,
+//         children: [
+//           Container(
+//             color: colorCodes[0],
+//             child: Text(entries[0]),
+//           ),
+//           Container(
+//             color: colorCodes[1],
+//             child: Text(entries[1]),
+//           ),
+//           Container(
+//             color: colorCodes[2],
+//             child: Text(entries[2]),
+//           ),
+//           Container(
+//             color: colorCodes[3],
+//             child: Text(entries[3]),
+//           ),
+//         ],
+//       ),
