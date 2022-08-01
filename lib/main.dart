@@ -154,15 +154,41 @@ centerTitle: true,
 
 
 //-----------------Padding-----------\\
-body: Padding(
-  padding: EdgeInsets.all(50),
-  child: Container(
-  color: Colors.red,
-  child: Text(
-     'You have pushed the button this many times:',
+// body: Padding(
+//   padding: EdgeInsets.all(50),
+//   child: Container(
+//   color: Colors.red,
+//   child: Text(
+//      'You have pushed the button this many times:',
+//   ),
+//   ),
+// ),
+
+//-------------TEST----------------\\
+// body: Container(
+//   alignment: Alignment.center,
+//   child: const Text(
+//     'You have pushed the button this many times:',
+//     ),
+//     constraints: const BoxConstraints(maxWidth: 50),
+//     ),
+
+
+  //--            Multiple-Child Widgets                   -\\
+  /// - can accept more than one widget as child
+  /// - non scrollable: Row, Column
+  
+  body:Column (
+    children: <Widget>[
+    const Text( 'You have pushed',
+    ),
+    const Text(
+      'the buton this many times:',
+      ),
+    Expanded(child: Container(color:Colors.red)),
+  ],
   ),
-  ),
-),
+
 
 
 floatingActionButton: FloatingActionButton(
